@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="badge-tag">Java Enterprise Edition &bull; JSTL 1.2</div>
+            <div class="badge-tag">JSTL 1.2</div>
             <h1>Portal de Ejercicios Académicos</h1>
             <p class="subtitle">Arquitectura Web Dinámica sin Servlets &bull; Cero Scriptlets (&lt;% %&gt;) &bull; MySQL & JSTL SQL</p>
         </header>
