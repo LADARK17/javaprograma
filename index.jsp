@@ -61,7 +61,7 @@
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: 0.75rem; padding: 1rem;">
                     <div style="color: #10b981; font-weight: 700; margin-bottom: 0.35rem;">☁️ Supabase Cloud &amp; PostgreSQL</div>
                     <div style="color: var(--text-muted); font-size: 0.9rem;">
-                        Conexión en la nube a <code>fzxikusnodngkvlztrgv.supabase.co</code> con REST API y driver PostgreSQL.
+                        Conexión en la nube a <code>eiowutpdlvsmfxejreyu.supabase.co</code> con REST API y driver PostgreSQL.
                     </div>
                 </div>
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: 0.75rem; padding: 1rem;">

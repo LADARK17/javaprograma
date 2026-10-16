@@ -110,34 +110,36 @@
 
         <div class="card">
             <h2>Lista de Empleados Registrados</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 80px;">ID</th>
-                        <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th style="width: 100px;">Edad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <c:forEach var="fila" items="${result.rows}">
+            <div class="table-container">
+                <table>
+                    <thead>
                         <tr>
-                            <td><span style="font-weight: 700; color: #818cf8;">#<c:out value="${fila.id}" /></span></td>
-                            <td><c:out value="${fila.nombres}" /></td>
-                            <td><c:out value="${fila.apellido1} ${fila.apellido2}" /></td>
-                            <td><span class="token-chip" style="padding: 0.25rem 0.65rem; font-size: 0.85rem;"><c:out value="${fila.edad}" /> años</span></td>
+                            <th style="width: 80px;">ID</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th style="width: 100px;">Edad</th>
                         </tr>
-                    </c:forEach>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="fila" items="${result.rows}">
+                            <tr>
+                                <td><span style="font-weight: 700; color: #818cf8;">#<c:out value="${fila.id}" /></span></td>
+                                <td><c:out value="${fila.nombres}" /></td>
+                                <td><c:out value="${fila.apellido1} ${fila.apellido2}" /></td>
+                                <td><span class="token-chip" style="padding: 0.25rem 0.65rem; font-size: 0.85rem;"><c:out value="${fila.edad}" /> años</span></td>
+                            </tr>
+                        </c:forEach>
 
-                    <c:if test="${empty result.rows}">
-                        <tr>
-                            <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 2rem 1rem;">
-                                No hay empleados registrados en la tabla aún.
-                            </td>
-                        </tr>
-                    </c:if>
-                </tbody>
-            </table>
+                        <c:if test="${empty result.rows}">
+                            <tr>
+                                <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 2rem 1rem;">
+                                    No hay empleados registrados en la tabla aún.
+                                </td>
+                            </tr>
+                        </c:if>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <a href="index.jsp" class="back-link">&larr; Volver al Menú Principal</a>
