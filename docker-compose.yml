@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ejercicio_corte2_app
+    ports:
+      - "8080:8080"
+    environment:
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+      - JAVA_OPTS=-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8
+    restart: unless-stopped
