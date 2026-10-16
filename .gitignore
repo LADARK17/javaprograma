@@ -1,0 +1,20 @@
+# Variables de entorno y credenciales sensibles
+.env
+.env.local
+.env.*.local
+
+# IDE y editores
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# Logs y temporales
+*.log
+scratch/
+__pycache__/
+*.pyc
+
+# Tomcat y Builds
+target/
+*.war

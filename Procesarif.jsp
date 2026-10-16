@@ -26,7 +26,7 @@
         </div>
 
         <div style="display: flex; gap: 1rem;">
-            <a href="Datosif.jsp" class="btn btn-secondary">&larr; Volver a Probar</a>
+            <a href="Datosif.jsp" class="btn btn-secondary"><svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> <span>Volver a Probar</span></a>
             <a href="index.jsp" class="btn btn-secondary">Menú Principal</a>
         </div>
     </div>

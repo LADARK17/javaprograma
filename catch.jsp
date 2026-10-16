@@ -30,7 +30,8 @@
                         </div>
                         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                             <button type="submit" class="btn">
-                                <span>⚡</span> Procesar con c:catch
+                                <svg class="icon icon-sm" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                <span>Procesar con c:catch</span>
                             </button>
                             <a href="catch.jsp?parametro=999" class="btn btn-secondary">
                                 Probar con "999" (Válido)
@@ -44,7 +45,10 @@
 
                 <c:if test="${not empty param.parametro}">
                     <div class="card">
-                        <h2>Resultado de la Operación</h2>
+                        <h2>
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Resultado de la Operación</span>
+                        </h2>
                         <%-- REFACTORIZACIÓN CERO SCRIPTLETS: En JSTL y EL estándar, forzar la conversión u operación
                             numérica en EL dentro de <c:catch>
                             dispara NumberFormatException / IllegalArgumentException si no es numérico,
@@ -52,7 +56,7 @@
                                 <c:catch var="error01">
                                     <c:set var="valor" value="${param.parametro + 0}" />
                                     <div class="alert alert-success">
-                                        <span>✔️</span>
+                                        <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                                         <div>
                                             <strong>Valor numérico procesado exitosamente:</strong>
                                             <span style="font-size: 1.15rem; font-weight: 700; margin-left: 0.35rem;">
@@ -64,7 +68,7 @@
 
                                 <c:if test="${not empty error01}">
                                     <div class="alert alert-danger">
-                                        <span>⚠️</span>
+                                        <svg class="icon" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
                                         <div>
                                             <strong>Se produjo un error al convertir el valor:</strong>
                                             <div
@@ -77,7 +81,10 @@
                     </div>
                 </c:if>
 
-                <a href="index.jsp" class="back-link">&larr; Volver al Menú Principal</a>
+                <a href="index.jsp" class="back-link">
+                    <svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    <span>Volver al Menú Principal</span>
+                </a>
             </div>
         </body>
 

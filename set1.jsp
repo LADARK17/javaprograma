@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <a href="index.jsp" class="back-link">&larr; Volver al Menú Principal</a>
+        <a href="index.jsp" class="back-link"><svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> <span>Volver al Menú Principal</span></a>
     </div>
 </body>
 </html>
