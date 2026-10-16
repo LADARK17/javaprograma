@@ -43,8 +43,11 @@
                 <a href="ResultTokens.jsp" class="btn">
                     <span>🧩</span> Ejercicio 8: Tokens c:forTokens
                 </a>
-                <a href="Procesarinfo.jsp" class="btn btn-accent" style="grid-column: 1 / -1;">
-                    <span>🗄️</span> Ejercicio 9: Persistencia con JSTL SQL (&lt;sql:update&gt; y &lt;sql:query&gt;)
+                <a href="Procesarinfo.jsp" class="btn btn-secondary">
+                    <span>🗄️</span> Ejercicio 9: Persistencia MySQL (JSTL SQL)
+                </a>
+                <a href="supabase.jsp" class="btn btn-accent" style="grid-column: 1 / -1;">
+                    <span>☁️</span> Ejercicio 9 (Cloud): Persistencia Supabase Cloud (0 Servlets, 0 Scriptlets)
                 </a>
             </div>
         </div>
