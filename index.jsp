@@ -44,7 +44,7 @@
                     <span>🧩</span> Ejercicio 8: Tokens c:forTokens
                 </a>
                 <a href="Procesarinfo.jsp" class="btn btn-accent" style="grid-column: 1 / -1;">
-                    <span>☁️</span> Ejercicio 9: Persistencia Cloud con Supabase (PostgreSQL REST API)
+                    <span>🗄️</span> Ejercicio 9: Persistencia con JSTL SQL (&lt;sql:update&gt; y &lt;sql:query&gt;)
                 </a>
             </div>
         </div>

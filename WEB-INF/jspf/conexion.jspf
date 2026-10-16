@@ -1,15 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-<%-- 
-    Configuración de persistencia del proyecto:
-    1. Base de datos Cloud Supabase (PostgreSQL / REST API):
-       - Project URL: https://fzxikusnodngkvlztrgv.supabase.co
-       - Driver PG disponible en WEB-INF/lib: org.postgresql.Driver
-    2. Fallback local MySQL:
---%>
+<%-- Configuración de DataSource JSTL 1.2 apuntando a MySQL local (Cero Scriptlets, Cero Servlets) --%>
 <sql:setDataSource var="empleados" 
-                   driver="com.mysql.jdbc.Driver" 
-                   url="jdbc:mysql://localhost:3306/empleados?useUnicode=true&amp;characterEncoding=UTF-8" 
+                   driver="com.mysql.cj.jdbc.Driver" 
+                   url="jdbc:mysql://localhost:3306/empleados?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC" 
                    user="root" 
                    password="" />
-

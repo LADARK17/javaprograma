@@ -7,17 +7,21 @@
 
     <display-name>EJERCICIO_CORTE2</display-name>
 
-    <!-- Filtro global para garantizar codificación UTF-8 en todas las peticiones y formularios -->
+    <!-- Filtro de codificación UTF-8 nativo de Apache Tomcat (sin clases Java personalizadas ni servlets) -->
     <filter>
-        <filter-name>CharacterEncodingFilter</filter-name>
-        <filter-class>com.ejercicio.supabase.CharacterEncodingFilter</filter-class>
+        <filter-name>SetCharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
         <init-param>
             <param-name>encoding</param-name>
             <param-value>UTF-8</param-value>
         </init-param>
+        <init-param>
+            <param-name>ignore</param-name>
+            <param-value>false</param-value>
+        </init-param>
     </filter>
     <filter-mapping>
-        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-name>SetCharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
